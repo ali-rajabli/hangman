@@ -1,0 +1,155 @@
+* {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    position: relative;
+}
+
+.game-name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 200px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    font-family: sans-serif;
+    background: linear-gradient(#080324, #f975f7, #b6e8f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #fff;
+}
+
+.neon-text {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    margin-top: -100px;
+    margin-left: 430px;
+    font-family: 'Mr Dafoe', cursive;
+    letter-spacing: 6px;
+    font-size: 140px;
+    color: #f975f7;
+    filter: drop-shadow(2px 2px 20px #f008b7);
+    transform: rotate(-15deg);
+    -webkit-text-stroke: 3px #f008b7;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+}
+
+div {
+    text-align: center;
+}
+
+#game-section>div {
+    font-weight: bold;
+}
+
+.img-div {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 20px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+
+#game-section {
+    border: 7px dotted #fff;
+    width: 470px;
+    height: 640px;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+h3,
+p,
+h2 {
+    margin: 20px 0;
+}
+
+.line {
+    position: absolute;
+    z-index: 2;
+    top: 300%;
+    height: 500px;
+    border: 10px dotted #f008b7;
+    box-shadow: 0px 0px 40px #f008b7;
+}
+
+#line1 {
+    border-left: 6px solid #f008b7;
+    left: 10%;
+    margin-left: -3px;
+}
+
+#line2 {
+    border-right: 6px solid #f008b7;
+    right: 10%;
+    margin-right: -3px;
+}
+
+.discoball {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    top: 180%;
+    background: none;
+    flex-shrink: 0;
+    flex-grow: 0;
+    /* box-shadow: 5px 5px 10px #f008b7; */
+}
+
+#ball1 {
+    left: 15%;
+    margin-right: 5px;
+}
+
+#ball2 {
+    transform: rotate(90deg);
+    right: 15%;
+    margin-left: 5px;
+}
+
+
+/* #disablemusic,
+#activatemusic {
+    height: 50px;
+    position: absolute;
+    width: 120px;
+    top: 240px;
+    left: 80px;
+    z-index: 1;
+    border: 5px dotted #f008b7;
+    background: black;
+    transition-duration: 0.1;
+} */
+
+#music {
+    position: absolute;
+    border-radius: 20px;
+    border: 5px dotted #f008b7;
+    box-shadow: 0px 0px 30px #f008b7;
+    top: 250px;
+    left: 40px;
+    z-index: 1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman | Game</title>
+    <link rel="icon" href="./assets/img/game.ico">
+    <link rel="preconnect" href="https://fontzs.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <audio src="./assets/msc/Michael Jackson - Billie Jean (Official Video).mp3" autoplay controls id="music"></audio>
+    <!-- <button id="disablemusic" onclick="disableMusic()">🔈</button>
+    <button id="activatemusic" onclick="activeMusic()">🔊</button> -->
+    <div class="header text-center">
+        <h1 class="game-name">HANGMAN</h1>
+        <h3 class="neon-text">80's style</h3>
+    </div>
+    <div id="line1" class="line"></div>
+    <div id="line2" class="line"></div>
+    <img src="./assets/img/discoball2.png" alt="discoball1" id="ball1" class="discoball">
+    <img src="./assets/img/discoball2.png" alt="discoball2" id="ball2" class="discoball">
+    <div class="main-container container-fluid text-center">
+        <div class="img-div"><img class="" src="./assets/img/hangman.jpg" alt="vector"></div>
+
+        <div id="game-section">
+            <p>press any key to start</p>
+            <div>
+                <h3 class="title-section">Wins</h3>
+                <div id="wins">0</div>
+            </div>
+            <div id="current-word-section">
+                <h3 class="title-section">Current Word</h3>
+                <div id="current-word">_ _ _ _ _</div>
+            </div>
+            <div id="guesses-remaining-section">
+                <h3 class="title-section">Number of Guesses Remaining</h3>
+                <div id="guesses-remaining">9</div>
+            </div>
+            <div id="guessed-letters-section">
+                <h3 class="title-section">Letters Already Guessed</h3>
+                <div id="guessed-letters">_</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
